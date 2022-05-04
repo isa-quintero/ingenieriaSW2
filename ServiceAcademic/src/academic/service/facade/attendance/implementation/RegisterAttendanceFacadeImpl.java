@@ -1,7 +1,9 @@
 package academic.service.facade.attendance.implementation;
 
 
-import org.springframework.transaction.annotation.Transaccional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import academic.domain.AttendanceDomain;
 import academic.dto.AttendanceDTO;
@@ -9,7 +11,7 @@ import academic.service.facade.attendance.RegisterAttendanceFacade;
 import academic.service.usecase.attendance.RegisterAttendance;
 
 @Service
-@Transaccional
+@Transactional
 public class RegisterAttendanceFacadeImpl implements RegisterAttendanceFacade{
 
 	@Autowired

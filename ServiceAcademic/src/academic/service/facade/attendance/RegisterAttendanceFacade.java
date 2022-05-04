@@ -1,5 +1,11 @@
 package academic.service.facade.attendance;
 
-public interface RegisterAttendanceFacade {
+import academic.dto.AttendanceDTO;
+import academic.service.facade.UseCaseFacade;
+
+public interface RegisterAttendanceFacade extends UseCaseFacade<AttendanceDTO>{
+
+	void execute(AttendanceDTO attendanceDTO);
+
 
 }
