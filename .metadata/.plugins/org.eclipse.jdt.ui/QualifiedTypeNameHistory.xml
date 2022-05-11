@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="academic.service.usecase.UseCase"/>
+    <fullyQualifiedTypeName name="academic.persistence.dao.attendance.AttendanceRepository"/>
+    <fullyQualifiedTypeName name="academic.entity.AttendanceEntity"/>
+    <fullyQualifiedTypeName name="academic.service.facade.UseCaseFacade"/>
+    <fullyQualifiedTypeName name="academic.service.usecase.attendance.RegisterAttendance"/>
+    <fullyQualifiedTypeName name="academic.domain.AttendanceDomain"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="academic.service.facade.attendance.RegisterAttendanceFacade"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="academic.dto.AttendanceDTO"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+</qualifiedTypeNameHistroy>

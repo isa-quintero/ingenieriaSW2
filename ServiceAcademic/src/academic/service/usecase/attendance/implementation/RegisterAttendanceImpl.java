@@ -19,7 +19,7 @@ public class RegisterAttendanceImpl implements RegisterAttendance{
 		// Business Logic
 		//1. Diagrama de actividades
 		AttendanceEntity attendanceEntity = null;
-		attendanceRepository.save(null)
+		attendanceRepository.save(null);
 		
 	}
 
