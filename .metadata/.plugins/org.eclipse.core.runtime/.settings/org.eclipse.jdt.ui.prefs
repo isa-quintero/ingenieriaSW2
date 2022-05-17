@@ -1,6 +1,6 @@
 content_assist_completion_replacement_background=200,200,0
 content_assist_completion_replacement_foreground=200,0,0
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="academic.dto.IdTypeDTO"><rhs name\="academic.dto.IdTypeDTO"/></lhs><lhs name\="academic.dto.CourseDTO"><rhs name\="academic.dto.CourseDTO"/></lhs><lhs name\="academic.dto.SessionDTO"><rhs name\="academic.dto.SessionDTO"/></lhs><lhs name\="academic.dto.StudentCourseDTO"><rhs name\="academic.dto.StudentCourseDTO"/></lhs><lhs name\="academic.dto.ProfessorDTO"><rhs name\="academic.dto.ProfessorDTO"/></lhs><lhs name\="academic.dto.StudentDTO"><rhs name\="academic.dto.StudentDTO"/></lhs><lhs name\="academic.domain.StudentCourseDomain"><rhs name\="academic.domain.StudentCourseDomain"/></lhs><lhs name\="academic.domain.SessionDomain"><rhs name\="academic.domain.SessionDomain"/></lhs><lhs name\="academic.domain.IdTypeDomain"><rhs name\="academic.domain.IdTypeDomain"/></lhs></history>
 content_assist_number_of_computers=14
 content_assist_parameters_background=52,57,61
 content_assist_parameters_foreground=238,238,238

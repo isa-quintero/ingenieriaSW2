@@ -1,7 +1,6 @@
 package academic.domain;
 
 
-
 public class IdTypeDomain {
 
 	private int id;

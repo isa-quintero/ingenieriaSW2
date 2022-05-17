@@ -1,44 +1,37 @@
 package academic.domain;
 
-import academic.dto.IdTypeDTO;
-import academic.dto.ProfessorDTO;
 
 public class ProfessorDomain {
 
 	private int id;
 	private IdTypeDomain idType;
 	private String name;
-	public ProfessorDTO() {
-		setId(0);
-		setIdType(IdTypeDTO.create());
-		setName("");
-	}
 	
+	public ProfessorDomain(int id, IdTypeDomain idType, String name) {
+		super();
+		setId(id);
+		setIdType(idType);
+		setName(name);
+	}
 	
 	public int getId() {
 		return id;
 	}
-	public ProfessorDTO setId(int i) {
-		this.id = i;
-		return this;
-
+	public void setId(int id) {
+		this.id = (id < 0) ? 0 : id;
 	}
-	public IdTypeDTO getIdType() {
+	public IdTypeDomain getIdType() {
 		return idType;
 	}
-	public ProfessorDTO setIdType(IdTypeDTO idType) {
-		this.idType = (idType == null) ? new ;
-		return this;
+	public void setIdType(IdTypeDomain idType) {
+		this.idType = (idType==null) ? new IdTypeDomain(0,"" ) : idType;
 
 	}
 	public String getName() {
 		return name;
 	}
-	public ProfessorDTO setName(String name) {
-		this.name = name;
-		return this;
+	public void setName(String name) {
+		this.name = (name==null) ? "" : name.trim();
 	}
-
-	
 
 }

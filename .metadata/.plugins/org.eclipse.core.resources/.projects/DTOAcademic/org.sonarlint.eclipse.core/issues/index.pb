@@ -3,3 +3,17 @@
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 S
 #src/academic/dto/AttendanceDTO.java,b\9\b9fb446e09fcf85d33a3183df8c4707542a525cd
+O
+src/academic/dto/IdTypeDTO.java,2\4\2430738d60c4af711d01676c2e955501dd31fc98
+V
+&src/academic/dto/StudentCourseDTO.java,1\2\12d676b0f383f7f026e974d032b0b662960fe2be
+P
+ src/academic/dto/SubjectDTO.java,0\6\06704e3ba99b1a5705826a59d816888cb49616be
+R
+"src/academic/dto/ProfessorDTO.java,7\e\7ee155897d8e5128d50dc4db6346f7e81affc552
+P
+ src/academic/dto/SessionDTO.java,2\d\2dd96b9ddc33e79b34f9289a7de620ab52f743a9
+P
+ src/academic/dto/StudentDTO.java,f\3\f3939cb2862dac189e0d0351ad6b3dab8becbcec
+O
+src/academic/dto/CourseDTO.java,e\3\e3f1a5bf585cdccbfa16b1e14e97e423989605d8

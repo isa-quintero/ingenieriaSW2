@@ -3,3 +3,17 @@
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 Y
 )src/academic/domain/AttendanceDomain.java,5\8\5813719316541a6344f937c00045857fd3e1a154
+U
+%src/academic/domain/CourseDomain.java,6\2\620bbb94319d0f6d44ffd0e6c4bdeb971456bae6
+V
+&src/academic/domain/SubjectDomain.java,0\5\05a7151e187477f27158217ca31260065bd8f94b
+V
+&src/academic/domain/SessionDomain.java,5\8\5826242f7599563800a65baac99f094bb8273184
+V
+&src/academic/domain/StudentDomain.java,6\4\649a526379be765313e7f9f13a61307c3903d7f5
+X
+(src/academic/domain/ProfessorDomain.java,5\0\50876bc294f756ef67ab089209bef2391360ef11
+\
+,src/academic/domain/StudentCourseDomain.java,7\f\7fd5cb7f53d5a288a9d9338bea684cc6eaf88781
+U
+%src/academic/domain/IdTypeDomain.java,d\7\d77748a76eb1d401a61185d08308e7d94b328c2f

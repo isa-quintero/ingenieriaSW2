@@ -1,51 +1,42 @@
 package academic.domain;
 
-import javax.security.auth.Subject;
-
-import academic.dto.CourseDTO;
-import academic.dto.ProfessorDTO;
-import academic.dto.SubjectDTO;
 
 public class CourseDomain {
 
 	private int id;
-	private Subject subject;
+	private SubjectDomain subject;
 	private ProfessorDomain professor;
 	
-	public CourseDTO() {
-		setId(0);
-		setSubject(SubjectDTO.create());
-		setProfessor(ProfessorDTO.create());
+	public CourseDomain(int id, SubjectDomain subject, ProfessorDomain professor) {
+		super();
+		setId(id);
+		setSubject(subject);
+		setProfessor(professor);
 	}
 	public int getId() {
 		return id;
 	}
 
-	public CourseDTO setId(int id) {
-		this.id = id;
-		return this;
+	public void setId(int id) {
+		this.id = (id < 0) ? 0 : id;	}
 
-	}
-
-	public SubjectDTO getSubject() {
+	public SubjectDomain getSubject() {
 		return subject;
 	}
 
-	public CourseDTO setSubject(SubjectDTO subject) {
-		this.subject = subject;
-		return this;
+	public void setSubject(SubjectDomain subject) {
+		this.subject = (subject == null) ? new SubjectDomain(0, "") : subject;
 
 	}
 
-	public ProfessorDTO getProfessor() {
+	public ProfessorDomain getProfessor() {
 		return professor;
 	}
 
-	public CourseDTO setProfessor(ProfessorDTO professor) {
-		this.professor = professor;
-		return this;
+	public void setProfessor(ProfessorDomain professor) {
+		this.professor = (professor==null) ? new ProfessorDomain(0, new IdTypeDomain(0, ""), "") : professor;
 	}
 	
 }
 
-}
+
