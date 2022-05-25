@@ -1,38 +1,31 @@
 package academic.domain;
 
-
 public class StudentDomain {
 
 	private int id;
+	private String idNumber;
 	private IdTypeDomain idType;
 	private String name;
-	
-	public StudentDomain(int id, IdTypeDomain idTypeDomain, String name) {
-		super();
-		setId(id);
-		setIdType(idType);
-		setName(name);
-	}
-	
+	private String email;
+
 	public int getId() {
 		return id;
 	}
-	public void setId(int id) {
-		this.id = (id < 0) ? 0 : id;
 
+	public String getIdNumber() {
+		return idNumber;
 	}
+
 	public IdTypeDomain getIdType() {
 		return idType;
 	}
-	public void setIdType(IdTypeDomain idType) {
-		this.idType = (idType==null) ? new IdTypeDomain(0,"" ) : idType;
 
-	}
 	public String getName() {
 		return name;
 	}
-	public void setName(String name) {
-		this.name = (name==null) ? "" : name.trim();
+
+	public String getEmail() {
+		return email;
 	}
-	
+
 }

@@ -5,13 +5,22 @@ public class SubjectDTO {
 	private int id;
 	private String name;
 	
-	public SubjectDTO() {
+	public SubjectDTO(int id, String name) {
+		super();
 		setId(0);
+		setName("");
+	}
+	
+	public SubjectDTO() {
 		setName("");
 	}
 	
 	public static SubjectDTO create() {
 		return new SubjectDTO();
+	}
+	
+	public static SubjectDTO create(int id, String name) {
+		return new SubjectDTO(id, name);
 	}
 	
 	public int getId() {

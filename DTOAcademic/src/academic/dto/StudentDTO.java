@@ -3,8 +3,11 @@ package academic.dto;
 public class StudentDTO {
 
 	private int id;
+	private String idNumber;
 	private IdTypeDTO idType;
 	private String name;
+	private String email;
+
 	
 	public StudentDTO() {
 		setId(0);
@@ -37,6 +40,25 @@ public class StudentDTO {
 	}
 	public StudentDTO setName(String name) {
 		this.name = name;
+		return this;
+	}
+
+	public String getIdNumber() {
+		return idNumber;
+		
+	}
+
+	public StudentDTO setIdNumber(String idNumber) {
+		this.idNumber = idNumber;
+		return this;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public StudentDTO setEmail(String email) {
+		this.email = email;
 		return this;
 	}
 	

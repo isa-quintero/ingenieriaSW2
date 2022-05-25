@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import academic.domain.AttendanceDomain;
 import academic.dto.AttendanceDTO;
+import academic.service.assembler.implementation.AttendanceAssembler;
 import academic.service.facade.attendance.RegisterAttendanceFacade;
 import academic.service.usecase.attendance.RegisterAttendance;
 
@@ -19,7 +20,7 @@ public class RegisterAttendanceFacadeImpl implements RegisterAttendanceFacade{
 	
 	@Override
 	public void execute(AttendanceDTO dto) {
-		AttendanceDomain domain = null;
+		AttendanceDomain domain = AttendanceAssembler.getAttendanceAssembler().convertDTOToDomain(dto);
 		registerAttendance.execute(null);
 		
 	}

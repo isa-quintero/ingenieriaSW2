@@ -1,11 +1,35 @@
 package academic.entity;
 
+import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table
 public class CourseEntity {
 
+	@Id
+	@GeneratedValue ( strategy = GenerationType.IDENTITY)
+	@Column (name= "id")
 	private int id;
+	@ManyToOne
+	@Column (name= "subject")
 	private SubjectEntity subject;
+	@ManyToOne
+	@Column (name= "professor")
 	private ProfessorEntity professor;
+	@Column (name= "initialDate")
+	private Date initialDate;
+	@Column (name= "finalDate")
+	private Date finalDate;
+	
+
 	
 	public CourseEntity() {
 		setId(0);
@@ -44,5 +68,21 @@ public class CourseEntity {
 	public CourseEntity setProfessor(ProfessorEntity professor) {
 		this.professor = professor;
 		return this;
+	}
+
+	public Date getInitialDate() {
+		return initialDate;
+	}
+
+	public void setInitialDate(Date initialDate) {
+		this.initialDate = initialDate;
+	}
+
+	public Date getFinalDate() {
+		return finalDate;
+	}
+
+	public void setFinalDate(Date finalDate) {
+		this.finalDate = finalDate;
 	}
 }

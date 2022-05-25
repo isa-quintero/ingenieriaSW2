@@ -1,21 +1,12 @@
 package academic.domain;
 
-import java.util.Date;
-
 public class AttendanceDomain {
 
 	private int id;
-	private SessionDomain sesion;
+	private SessionDomain session;
 	private StudentCourseDomain studentCourse;
 	private boolean attended;
-
-	public AttendanceDomain(int id, SessionDomain sesion, StudentCourseDomain studentCourse) {
-		super();
-		setId(id);
-		setSesion(sesion);
-		setStudentCourse(studentCourse);
-		setAttended(attended);
-	}
+	
 
 	public int getId() {
 		return id;
@@ -23,16 +14,14 @@ public class AttendanceDomain {
 
 	public void setId(int id) {
 		this.id = (id < 0) ? 0 : id;
-
 	}
 
-	public SessionDomain getSesion() {
-		return sesion;
+	public SessionDomain getSession() {
+		return session;
 	}
 
-	public void setSesion(SessionDomain sesion) {
-		this.sesion = (sesion==null) ? new SessionDomain(0, new CourseDomain(0, new SubjectDomain(0,""), new ProfessorDomain(0, new IdTypeDomain(0,""),"")), new Date()) : sesion;
-
+	public void setSession(SessionDomain session) {
+		this.session = (session == null) ? new SessionDomain() : session;
 	}
 
 	public StudentCourseDomain getStudentCourse() {
@@ -40,14 +29,15 @@ public class AttendanceDomain {
 	}
 
 	public void setStudentCourse(StudentCourseDomain studentCourse) {
-		this.studentCourse = (studentCourse == null) ? new StudentCourseDomain(0, null, null) : studentCourse;
+		this.studentCourse = (studentCourse == null) ? new StudentCourseDomain() : studentCourse;
 	}
 
 	public boolean isAttended() {
 		return attended;
 	}
+
 	public void setAttended(boolean attended) {
-		this.attended = (attended == null) ? false : attended;
+		this.attended = attended;
 	}
-	
+
 }

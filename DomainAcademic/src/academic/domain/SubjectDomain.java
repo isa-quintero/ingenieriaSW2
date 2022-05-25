@@ -12,6 +12,13 @@ public class SubjectDomain {
 		setName(name);
 	}
 	
+	public SubjectDomain() {
+		setName("");
+	}
+	
+	public static SubjectDomain create(int id, String name) {
+		return new SubjectDomain(id, name);
+	}
 	
 	public int getId() {
 		return id;

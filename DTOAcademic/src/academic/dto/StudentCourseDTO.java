@@ -5,6 +5,7 @@ public class StudentCourseDTO {
 	private int id;
 	private StudentDTO student;
 	private CourseDTO course;
+	private int state;
 	
 	public StudentCourseDTO() {
 		setId(0);
@@ -37,6 +38,15 @@ public class StudentCourseDTO {
 	}
 	public StudentCourseDTO setCourse(CourseDTO course) {
 		this.course = course;
+		return this;
+	}
+
+	public int getState() {
+		return state;
+	}
+
+	public StudentCourseDTO setState(int state) {
+		this.state = state;
 		return this;
 	}
 	

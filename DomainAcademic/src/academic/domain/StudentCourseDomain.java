@@ -6,8 +6,9 @@ public class StudentCourseDomain {
 	private int id;
 	private StudentDomain student;
 	private CourseDomain course;
+	private int state;
 	
-	public StudentCourseDomain(int id, StudentDomain student, CourseDomain course) {
+	public StudentCourseDomain() {
 		super();
 		setId(id);
 		setStudent(student);
@@ -24,13 +25,20 @@ public class StudentCourseDomain {
 		return student;
 	}
 	public void setStudent(StudentDomain student) {
-		this.student = (student==null) ? new StudentDomain(0, new IdTypeDomain(0, ""), "") : student;
-
+		this.student = (student==null) ? new StudentDomain():student;
 	}
 	public CourseDomain getCourse() {
 		return course;
 	}
 	public void setCourse(CourseDomain course) {
-		this.course = (course==null) ? new CourseDomain(0, new SubjectDomain(0, ""),new ProfessorDomain(0, new IdTypeDomain(0,""),"") ) : course;
+		this.course = (course==null) ? new CourseDomain() : course;
+	}
+
+	public int getState() {
+		return state;
+	}
+
+	public void setState(int state) {
+		this.state = (state< 0) ? 0 : state;
 	}
 }

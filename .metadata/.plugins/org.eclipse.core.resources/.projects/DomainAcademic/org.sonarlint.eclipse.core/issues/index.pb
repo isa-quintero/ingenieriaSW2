@@ -17,3 +17,5 @@ X
 ,src/academic/domain/StudentCourseDomain.java,7\f\7fd5cb7f53d5a288a9d9338bea684cc6eaf88781
 U
 %src/academic/domain/IdTypeDomain.java,d\7\d77748a76eb1d401a61185d08308e7d94b328c2f
+a
+1src/academic/domain/StudentCourseStateDomain.java,0\d\0dfec3caed5fea379a0ca0bd7c9057c1d53a8f9a

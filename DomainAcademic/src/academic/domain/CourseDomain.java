@@ -1,32 +1,32 @@
 package academic.domain;
 
+import java.util.Calendar;
+import java.util.Date;
+
+import javax.security.auth.Subject;
 
 public class CourseDomain {
 
 	private int id;
-	private SubjectDomain subject;
+	private Subject subject;
 	private ProfessorDomain professor;
-	
-	public CourseDomain(int id, SubjectDomain subject, ProfessorDomain professor) {
-		super();
-		setId(id);
-		setSubject(subject);
-		setProfessor(professor);
-	}
+	private Date initialDate;
+	private Date finalDate;
+
 	public int getId() {
 		return id;
 	}
 
 	public void setId(int id) {
-		this.id = (id < 0) ? 0 : id;	}
+		this.id = id;
+	}
 
-	public SubjectDomain getSubject() {
+	public Subject getSubject() {
 		return subject;
 	}
 
-	public void setSubject(SubjectDomain subject) {
-		this.subject = (subject == null) ? new SubjectDomain(0, "") : subject;
-
+	public void setSubject(Subject subject) {
+		this.subject = subject;
 	}
 
 	public ProfessorDomain getProfessor() {
@@ -34,9 +34,27 @@ public class CourseDomain {
 	}
 
 	public void setProfessor(ProfessorDomain professor) {
-		this.professor = (professor==null) ? new ProfessorDomain(0, new IdTypeDomain(0, ""), "") : professor;
+		this.professor = professor;
+	}
+
+	public Date getInitialDate() {
+		return initialDate;
+	}
+
+	public void setInitialDate(Date initialDate) {
+		this.initialDate = initialDate;
+	}
+
+	public Date getFinalDate() {
+		return finalDate;
+	}
+
+	public void setFinalDate(Date finalDate) {
+		this.finalDate = finalDate;
 	}
 	
+	public boolean isOpen() {
+		return (Calendar.getInstance().getTime().getTime() >= getInitialDate().getTime() 
+				&& Calendar.getInstance().getTime().getTime() <= getFinalDate().getTime());
+	}
 }
-
-

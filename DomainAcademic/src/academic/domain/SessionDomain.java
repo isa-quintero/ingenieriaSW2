@@ -9,7 +9,7 @@ public class SessionDomain {
 	private CourseDomain course;
 	private Date date;
 	
-	public SessionDomain(int id, CourseDomain course, Date date) {
+	public SessionDomain() {
 		super();
 		setId(id);
 		setCourse(course);
@@ -26,8 +26,7 @@ public class SessionDomain {
 		return course;
 	}
 	public void setCourse(CourseDomain course) {
-		this.course = (course==null) ? new CourseDomain(0, new SubjectDomain(0, ""), new ProfessorDomain(0, new IdTypeDomain(0,""), "")) : course;
-
+		this.course = (course==null) ? new CourseDomain() : course;
 	}
 	public Date getDate() {
 		return date;

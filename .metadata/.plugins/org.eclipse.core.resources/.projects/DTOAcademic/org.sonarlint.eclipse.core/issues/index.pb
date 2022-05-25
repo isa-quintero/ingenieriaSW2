@@ -17,3 +17,5 @@ P
  src/academic/dto/StudentDTO.java,f\3\f3939cb2862dac189e0d0351ad6b3dab8becbcec
 O
 src/academic/dto/CourseDTO.java,e\3\e3f1a5bf585cdccbfa16b1e14e97e423989605d8
+[
++src/academic/dto/StudentCourseStateDTO.java,6\f\6f9c4b30db0ab85eeab0815f3b3f9b62762af885

@@ -17,3 +17,5 @@ V
 &src/academic/entity/StudentEntity.java,9\2\921ed621cec5b3ab1d3da79499885c99a9e30455
 U
 %src/academic/entity/CourseEntity.java,a\6\a610527a1a7502feb9781b982510e1f3986ed17c
+a
+1src/academic/entity/StudentCourseStateEntity.java,9\9\9916d7e43ca86c94cedbaa57fdf6f6e0bbb8ecac

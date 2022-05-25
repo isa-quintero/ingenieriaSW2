@@ -5,16 +5,26 @@ public class ProfessorDTO {
 	private int id;
 	private IdTypeDTO idType;
 	private String name;
+	private String email;
+	
+	public ProfessorDTO(int id, String name) {
+		super();
+		setId(0);
+		setName("");
+	}
 	
 	public ProfessorDTO() {
-		setId(0);
-		setIdType(IdTypeDTO.create());
 		setName("");
 	}
 	
 	public static ProfessorDTO create() {
 		return new ProfessorDTO();
 	}
+	
+	public static ProfessorDTO create(int id, String name) {
+		return new ProfessorDTO(id, name);
+	}
+	
 	
 	public int getId() {
 		return id;
@@ -37,6 +47,15 @@ public class ProfessorDTO {
 	}
 	public ProfessorDTO setName(String name) {
 		this.name = name;
+		return this;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public ProfessorDTO setEmail(String email) {
+		this.email = email;
 		return this;
 	}
 
